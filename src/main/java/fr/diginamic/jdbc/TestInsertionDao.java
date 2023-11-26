@@ -11,7 +11,7 @@ public class TestInsertionDao {
 
         try {
             FournisseurDao fdao = new FournisseurDaoJdbc();
-            fdao.insert(new Fournisseur("L''espace création"));
+            fdao.insert(new Fournisseur("L'espace création"));
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
